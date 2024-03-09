@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <img src="images/icon.png" alt="LibrePub Reader App Icon" class="icon">
     <title>LibrePub: Free and Simple Ebooks</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,8 +46,8 @@
     <p>Getting started with LibrePub is easy! Here's a quick guide to creating your own LibrePub ebooks:</p>
     <ol>
       <li><b>Prepare your text content:</b> Each chapter of your ebook should be a separate plain text (.txt) file. Store all chapter files within a folder named "chapters".  You can use any plain text editor to create your chapters. LibrePub itself doesn't enforce any specific formatting within the chapters.</li>
-      <li><b>Optional: Images:</b> If you want to include images in your ebook, place them in a folder named "images". These images will be browseable by within LibrePub Reader or other apps that support the LibrePub format.</li>
-      <li><b>Create a manifest.json file:</b> This file provides essential metadata about your ebook. You can create a simple text file named "manifest.json" and add the following entries, replacing the bracketed placeholders with your actual information:
+      <li><b>Optional Images:</b> If you want to include images in your ebook, place them in a folder named "images". These images will be browseable by within LibrePub Reader or other apps that support the LibrePub format.</li>
+      <li><b>Create a manifest.json file:</b> This file provides essential metadata about your ebook. Just create a simple text file named "manifest.json" and add the following entries, replacing the bracketed placeholders with your actual information:
           <pre><code>
          {  
             "title": "Your Ebook Title",
@@ -68,7 +69,7 @@
   </section>
 <hr>
   <footer>
-    <p>&copy; 2023 LibrePub Project | Proudly built using the Godot Engine on desktop Linux</p>
+    <p>&copy; 2024 LibrePub Project | Proudly built using the Godot Engine on Desktop Linux</p>
     <a href="contribute_link">Get Involved</a>
   </footer>
 
@@ -98,7 +99,7 @@ body {
 }
 
 .button {
-  background-color: #007bff;  /* Example primary color */
+  background-color: #363d4a;  /* Example primary color */
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -128,6 +129,12 @@ h1, h2 {
   font-style: italic; 
   font-size: 16px; /* Slightly smaller size for the tagline */
   margin-bottom: 20px; /*Spacing between the tagline and main paragraph */ 
+}
+
+.icon {
+  width: 80px; /* Adjust the width as needed */
+  height: 80px; /* Adjust the height as needed */
+  margin-right: 20px; /* Optional margin from the text */
 }
 
 
