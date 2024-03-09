@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibrePub: Free and Simple Ebooks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lora&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+    <h1>LibrePub: Free and Simple Ebooks</h1>
+    <p>An open format for creating and reading ebooks focused on the pure joy of text.</p>
+    <p class="tagline">You will own your eBooks and be happy.</p> 
+    <a href="reader_download_link" class="button">Get LibrePub Reader</a> 
+</header>
+    <section class="about">
+    <h2>What is LibrePub?</h2>
+    <p>LibrePub is a simple, text-focused ebook format that prioritizes ease of creation, reading, and openness.  </p>
+    <ul>
+        <li>Simple plain text chapters </li>
+        <li>Image support</li>
+        <li>Essential metadata (title, author, and language)</li>
+        <li>Optional advanced metadata (genre, cover image)</li>
+    </ul>
+  </section>
+
+<section class="reader">
+    <h2>LibrePub Reader</h2>
+    <p>The official LibrePub Reader is a free and open-source application designed to provide a distraction-free reading experience with powerful features:</p>
+    <ul>
+        <li>Annotations and highlights</li>
+        <li>Local and web dictionary lookup (for now, only in English)</li>
+        <li>Configurable fonts, sizes, and colors</li>
+        <li>Vocabulary builder with CSV (Anki-compatible) flashcard export</li>
+        <li>Auditable, transparent code. No data collection. No ads</li>
+        <li>Available for Android, Linux, and Windows</li>
+    </ul>
+  </section>
+
+  <section class="creating">
+    <h2>Creating LibrePub Ebooks</h2>
+    <p>Getting started with LibrePub is easy! Here's a quick guide to creating your own LibrePub ebooks:</p>
+    <ol>
+      <li><b>Prepare your text content:</b> Each chapter of your ebook should be a separate plain text (.txt) file. Store all chapter files within a folder named "chapters".  You can use any plain text editor to create your chapters. LibrePub itself doesn't enforce any specific formatting within the chapters.</li>
+      <li><b>Optional: Images:</b> If you want to include images in your ebook, place them in a folder named "images". These images will be browseable by within LibrePub Reader or other apps that support the LibrePub format.</li>
+      <li><b>Create a manifest.json file:</b> This file provides essential metadata about your ebook. You can create a simple text file named "manifest.json" and add the following entries, replacing the bracketed placeholders with your actual information:
+          <pre><code>
+         {  
+            "title": "Your Ebook Title",
+            "author": "Your Name",
+            "language": "en",  /* Change language code if needed */
+            "genre": "Your Genre"  /* Optional */
+            "cover_image": "cover.jpg" /* Optional */
+          }</code></pre>
+          The "title", "author", and "language" fields are required. 
+      </li>
+      <li><b>Zip it Up:</b>  Place your "chapters" folder, the "images" folder (if you have images), and the "manifest.json" file into the root of a single zip archive.  Rename the zip archive using the `.lpub` extension (e.g., "your_ebook.lpub").</li>
+    </ol>
+    <p>Congratulations! You've created your first LibrePub ebook.  </p>
+  </section>
+
+<section class="automating">
+    <h2>Convert Existing Formats</h2>
+    <p>I'm currently working on the automated conversion of existing formats (e.g., epub into LibrePub). If you'd like to help, please reach out!</p>
+  </section>
+<hr>
+  <footer>
+    <p>&copy; 2023 LibrePub Project | Proudly built using the Godot Engine on desktop Linux</p>
+    <a href="contribute_link">Get Involved</a>
+  </footer>
+
+  </body>
+</html>
+
+
+<style>
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.hero {
+  background-color: #f0f0f0;  /* Light background */
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  color: #222; /* Dark text color */
+  font-size: 36px;
+}
+
+.button {
+  background-color: #007bff;  /* Example primary color */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px; 
+}
+/* Previous styles */
+
+.about ul, .reader ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+body {
+  font-family: 'EB Garamond', serif; /* Classic open-source serif font */
+  font-size: 18px;  /* Increased font size */
+  line-height: 1.7; 
+}
+
+h1, h2 {
+    font-family: 'Lora', serif; /* Elegant open-source font for headings */
+}
+
+/* ... previous styles ... */
+
+.hero .tagline { 
+  font-style: italic; 
+  font-size: 16px; /* Slightly smaller size for the tagline */
+  margin-bottom: 20px; /*Spacing between the tagline and main paragraph */ 
+}
+
+
+/* Other styles from previous example */
+
+
+/* Style other sections like .about, footer, etc. */
+</style>
+
