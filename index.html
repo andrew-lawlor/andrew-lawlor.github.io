@@ -26,9 +26,9 @@
     <p>LibrePub is a simple, text-focused eBook format that prioritizes ease of creation, reading, and openness.  </p>
     <ul>
         <li>Simple plain-text chapters </li>
+        <li>Open, text-forward format</li>
         <li>Image support</li>
-        <li>Essential metadata (title, author, and language)</li>
-        <li>Optional metadata (genre, cover image)</li>
+        <li>Lightweight</li>
     </ul>
   </section>
 
@@ -49,18 +49,20 @@
     <h2>Creating LibrePub Ebooks</h2>
     <p>Getting started with LibrePub is easy! Here's a quick guide to creating your own LibrePub ebooks:</p>
     <ol>
-      <li><b>Prepare your text content:</b> Each chapter of your ebook should be a separate plain text (.txt) file. Store all chapter files within a folder named "chapters".  You can use any plain text editor to create your chapters. LibrePub itself doesn't enforce any specific formatting within the chapters.</li>
-      <li><b>Optional Images:</b> If you want to include images in your ebook, place them in a folder named "images". These images will be browseable by within LibrePub Reader or other apps that support the LibrePub format.</li>
-      <li><b>Create a manifest.json file:</b> This file provides essential metadata about your ebook. Just create a simple text file named "manifest.json" and add the following entries, replacing the bracketed placeholders with your actual information:
+      <li><b>Create a new folder:</b> Ensure there are no spaces in the file name.</li>
+      <li><b>Prepare your text content:</b> Each chapter of your ebook should be a separate plain text (.txt) file. Store all chapter files within a folder named "chapters".  You can use any plain text editor to create your chapters. LibrePub itself doesn't enforce any specific formatting -- express yourself!</li>
+      <li><b>Cover Image:</b> Create an "images" folder under your parent directory. Place your cover image inside.</li>
+      <li><b>Optional Images:</b>You may place other images inside the image folder. Apps that read LibrePub files can allow the user to browse them. Images can also be inserted into the text body in the following way: LIBREPUB_IMAGE(image_file_name.png)
+      <li><b>Create a manifest.json file:</b> This file provides essential metadata about your ebook. Just create a simple text file named "manifest.json" in your root directory and add the following entries, replacing the bracketed placeholders with your actual information:
           <pre><code>
          {  
-            "title": "Your Ebook Title",
-            "author": "Your Name",
-            "language": "en",  /* Change language code if needed */
-            "genre": "Your Genre"  /* Optional */
-            "cover_image": "cover.jpg" /* Optional */
+            "title": "[Your Ebook Title]",
+            "author": "[Your Name]",
+            "language": "[en]",
+            "genre": "[Your Genre]"
+            "cover_image": "[cover.jpg]"
           }</code></pre>
-          The "title", "author", and "language" fields are required. 
+          The "title", "author", "cover_image" and "language" fields are required. "genre" is optional.
       </li>
       <li><b>Zip it Up:</b>  Place your "chapters" folder, the "images" folder (if you have images), and the "manifest.json" file into the root of a single zip archive.  Rename the zip archive using the `.lpub` extension (e.g., "your_ebook.lpub").</li>
     </ol>
