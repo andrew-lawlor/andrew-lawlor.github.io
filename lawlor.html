@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andrew Lawlor</title>
+<meta name="description" content="Andrew Lawlor — forward-deployed engineer at rhino.ai. Classically educated; the Trivium applied to consulting and engineering.">
+<style>
+  :root {
+    --paper: #f6f1e7;
+    --ink: #2b2721;
+    --muted: #6e665a;
+    --rule: #cfc5b3;
+    --accent: #7a2e1f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1c1a17;
+      --ink: #e8e1d3;
+      --muted: #a39a8a;
+      --rule: #3d3830;
+      --accent: #d08a6e;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body {
+    margin: 0;
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    font-size: 1.125rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+  }
+  header { text-align: center; margin-bottom: 2.5rem; }
+  h1 {
+    font-weight: normal;
+    font-size: 2.4rem;
+    letter-spacing: 0.04em;
+    margin: 0;
+  }
+  .role {
+    font-variant: small-caps;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin: 0.4rem 0 0;
+  }
+  .ornament {
+    text-align: center;
+    color: var(--rule);
+    letter-spacing: 0.6em;
+    margin: 2rem 0;
+    user-select: none;
+  }
+  p { margin: 0 0 1.2rem; hyphens: auto; }
+  p.lede::first-letter {
+    float: left;
+    font-size: 3.4rem;
+    line-height: 0.9;
+    padding: 0.35rem 0.5rem 0 0;
+    color: var(--accent);
+  }
+  h2 {
+    font-weight: normal;
+    font-variant: small-caps;
+    letter-spacing: 0.12em;
+    font-size: 1rem;
+    color: var(--muted);
+    margin: 2.5rem 0 0.8rem;
+  }
+  dl.trivium { margin: 1.6rem 0 0; }
+  dl.trivium dt {
+    font-variant: small-caps;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-top: 0.9rem;
+  }
+  dl.trivium dd { margin: 0.1rem 0 0 1.5rem; }
+  ul.work { list-style: none; padding: 0; margin: 0; }
+  ul.work li { margin-bottom: 1rem; }
+  ul.work strong { font-weight: normal; font-style: italic; }
+  a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    transition: border-color 0.15s, color 0.15s;
+  }
+  a:hover, a:focus { color: var(--accent); border-color: var(--accent); }
+  nav.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem 1.6rem;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+  }
+  footer {
+    text-align: center;
+    margin-top: 3.5rem;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Andrew Lawlor</h1>
+    <p class="role">Forward-Deployed Engineer · rhino.ai</p>
+  </header>
+
+  <p class="lede">I am currently a forward-deployed engineer at <a href="https://rhino.ai">rhino.ai</a>, working where a client's problem meets the software that has to solve it. Before that I spent about ten years designing and building ServiceNow integrations and custom applications, largely for federal agencies.</p>
+
+  <p>I came to engineering through a classical education in history, language and the liberal arts, and I still work by its oldest method, the Trivium. It serves me equally as a consultant and as an engineer.</p>
+
+  <dl class="trivium">
+    <dt>Grammar</dt>
+    <dd>Learn the domain and its vocabulary until the problem can be stated in the client's own terms.</dd>
+    <dt>Logic</dt>
+    <dd>Reason from that statement to a sound design, and test it against the cases that will break it.</dd>
+    <dt>Rhetoric</dt>
+    <dd>Explain the result plainly to the people who must decide on it and live with it.</dd>
+  </dl>
+
+  <h2>Beyond client work</h2>
+  <p>I build desktop applications, command-line utilities and developer tooling in Rust, Go and Zig, nearly all of it on Linux. Lately my attention is on LLM-backed systems: agents that call tools, locally run models, and the plumbing that makes them dependable.</p>
+
+  <div class="ornament" aria-hidden="true">❧</div>
+
+  <nav class="links">
+    <a href="mailto:andrew@lawlor.io">Email</a>
+    <a href="https://www.linkedin.com/in/andrewlawloritindustry">LinkedIn</a>
+    <a href="https://github.com/andrew-lawlor">GitHub</a>
+  </nav>
+
+  <footer>Northern Virginia</footer>
+</main>
+</body>
+</html>
